@@ -2,7 +2,7 @@
 .container {
   max-width: 1100px;
   margin: 0 auto;
-  overflow: auto;
+  overflow: hidden;
   padding: 0 40px;
 }
 
@@ -47,10 +47,6 @@ textarea::placeholder {
 .btn-outline {
   background: transparent;
   border: 1px #fff solid;
-}
-
-.btn:hover {
-  transform: scale(0.98);
 }
 
 /* Backgrounds & colored buttons */
@@ -155,30 +151,39 @@ h3 {
 .my-1 {
   margin: 1rem 0;
 }
+
 .my-2 {
   margin: 1.5rem 0;
 }
+
 .my-3 {
   margin: 2rem 0;
 }
+
 .my-4 {
   margin: 3rem 0;
 }
+
 .my-5 {
   margin: 4rem 0;
 }
+
 .m-1 {
   margin: 1rem;
 }
+
 .m-2 {
   margin: 1.5rem;
 }
+
 .m-3 {
   margin: 2rem;
 }
+
 .m-4 {
   margin: 3rem;
 }
+
 .m-5 {
   margin: 4rem;
 }
@@ -187,30 +192,47 @@ h3 {
 .py-1 {
   padding: 1rem 0;
 }
+
 .py-2 {
   padding: 1.5rem 0;
 }
+
 .py-3 {
   padding: 2rem 0;
 }
+
 .py-4 {
   padding: 3rem 0;
 }
+
 .py-5 {
   padding: 4rem 0;
 }
+
 .p-1 {
   padding: 1rem;
 }
+
 .p-2 {
   padding: 1.5rem;
 }
+
 .p-3 {
   padding: 2rem;
 }
+
 .p-4 {
   padding: 3rem;
 }
+
 .p-5 {
   padding: 4rem;
+}
+
+@media (max-width: 500px) {
+
+  .flex {
+    flex-direction: column;
+  }
+
 }

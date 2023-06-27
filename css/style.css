@@ -7,6 +7,7 @@
   --light-color: #f4f4f4;
   --dark-background: rgba(0, 34, 64, 0.7);
 }
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -22,6 +23,7 @@ body {
 ul {
   list-style-type: none;
 }
+
 a {
   text-decoration: none;
   color: #333;
@@ -58,20 +60,25 @@ img {
   height: 70px;
 }
 
+.navbar h1 {
+  color: #fff;
+}
+
 .navbar ul {
   display: flex;
 }
 
-.navbar a {
+.navbar .navlinks {
   color: #fff;
   padding: 10px;
   margin: 0 5px;
   white-space: nowrap;
 }
 
-.navbar a:hover {
+.navbar .navlinks:hover {
   border-bottom: 2px #fff solid;
 }
+
 .navbar .flex {
   justify-content: space-between;
 }
@@ -138,21 +145,6 @@ textarea {
   font-size: 1rem;
 }
 
-/* .showcase::before,
-.showcase::after {
-  content: "";
-  position: absolute;
-  height: 100px;
-  bottom: -70px;
-  right: 0;
-  left: 0;
-  background: #fff;
-  transform: skew(-3deg);
-  -webkit-transform: skewY(-3deg);
-  -moz-transform: skewY(-3deg);
-  -ms-transform: skewY(-3deg);
-} */
-
 /* Sonntag */
 .sonntag {
   padding-top: 100px;
@@ -192,7 +184,7 @@ textarea {
   justify-self: flex-end;
 }
 
-.features-main .card > i {
+.features-main .card>i {
   margin-right: 20px;
 }
 
@@ -252,15 +244,15 @@ input[type="checkbox"] {
   transition: max-height 0.25s ease-in-out;
 }
 
-.toggle:checked + .lbl-toggle + .collapsible-content {
+.toggle:checked+.lbl-toggle+.collapsible-content {
   max-height: 100vh;
 }
 
-.toggle:checked + .lbl-toggle::before {
+.toggle:checked+.lbl-toggle::before {
   transform: rotate(90deg) translateX(-3px);
 }
 
-.toggle:checked + .lbl-toggle {
+.toggle:checked+.lbl-toggle {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -320,6 +312,7 @@ iframe {
 
 /* Tablets and under -- Eigentlich 768px*/
 @media (max-width: 777px) {
+
   .grid,
   .showcase .grid,
   .stats .grid,
@@ -376,7 +369,7 @@ iframe {
     padding: 9px;
   }
 
-  .navbar a {
+  .navbar .navlinks {
     font-size: 1rem;
     color: #fff;
     padding: 10px;
@@ -387,7 +380,7 @@ iframe {
     font-weight: 300;
   }
 
-  .navbar a:hover {
+  .navbar .navlinks:hover {
     outline: 3px solid #002240;
     border-bottom: 0;
   }
@@ -433,6 +426,7 @@ iframe {
     padding: 10px;
     font-weight: 300;
   }
+
   .logo {
     white-space: nowrap;
     font-size: 1.2rem;
@@ -446,7 +440,7 @@ iframe {
     height: 80px;
   }
 
-  .navbar a {
+  .navbar .navlinks {
     color: #fff;
     padding: 10px;
     margin: 0 5px;
@@ -454,7 +448,7 @@ iframe {
     outline-offset: -7px;
   }
 
-  .navbar a:hover {
+  .navbar .navlinks:hover {
     outline: 3px solid #002240;
     border-bottom: 0;
   }
