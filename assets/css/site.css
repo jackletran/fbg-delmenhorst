@@ -88,12 +88,35 @@ h2 {
   font-weight: 300;
 }
 
+h1,
+h2,
+h3,
+summary {
+  text-wrap: balance;
+}
+
 h1 { font-size: clamp(2rem, 1.4rem + 2.6vw, 3.2rem); }
 h2 { font-size: clamp(1.6rem, 1.25rem + 1.5vw, 2.3rem); }
 h3 { font-size: 1.2rem; font-weight: 700; }
 
 p {
   margin: 0 0 1em;
+}
+
+p,
+dd,
+li {
+  text-wrap: pretty;
+}
+
+/* Silbentrennung für lange deutsche Wörter auf schmalen Bildschirmen */
+@media (max-width: 800px) {
+  p,
+  dd {
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphenate-limit-chars: 10 4 4;
+  }
 }
 
 a {
@@ -341,14 +364,27 @@ a:hover {
     padding: 22px 16px;
   }
   .hero {
-    min-height: auto;
+    /* sichtbare Höhe abzüglich Kopfzeile (ca. 108px), Kasten mittig */
+    min-height: calc(100vh - 108px);
+    min-height: calc(100svh - 108px);
   }
   .hero .container {
     justify-content: center;
-    padding-block: 120px 32px;
+    padding-block: 24px;
   }
   .hero-panel {
     text-align: center;
+    padding: 24px 20px;
+  }
+  .hero-panel h1 {
+    margin-bottom: 0.4em;
+  }
+  .hero-panel p {
+    font-size: 1.05rem;
+  }
+  .hero .btn {
+    width: 100%;
+    padding-inline: 16px;
   }
   .hero .btn-row {
     justify-content: center;
@@ -539,7 +575,13 @@ a:hover {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   gap: clamp(24px, 4vw, 56px);
-  align-items: center;
+  align-items: start;
+}
+
+.split picture {
+  position: sticky;
+  top: 96px;
+  margin-top: 0.5em;
 }
 
 .split img {
@@ -552,6 +594,10 @@ a:hover {
 @media (max-width: 800px) {
   .split {
     grid-template-columns: 1fr;
+  }
+  .split picture {
+    position: static;
+    margin-top: 0;
   }
   .split img {
     max-width: 420px;
@@ -567,10 +613,20 @@ a:hover {
   font-weight: 700;
   font-size: 1.15rem;
   color: var(--dark);
+  padding-left: 12px;
+  border-left: 4px solid var(--primary);
+  line-height: 1.3;
+  margin-bottom: 0.35em;
 }
 
 .name-list dd {
-  margin: 0 0 1.2em;
+  margin: 0 0 1.5em;
+  padding-left: 16px;
+  max-width: 62ch;
+}
+
+.name-list dd:last-child {
+  margin-bottom: 0;
 }
 
 /* Akkordeon (native <details>, ohne JavaScript, tastaturbedienbar) */
@@ -599,6 +655,22 @@ a:hover {
   font-size: 1.1rem;
   color: var(--dark);
   list-style: none;
+}
+
+/* Glaubensgrundlage: Begriffe in Großbuchstaben (nur Darstellung) */
+.accordion-caps summary {
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 400px) {
+  .accordion summary {
+    font-size: 1rem;
+    padding: 16px;
+  }
+  .accordion .content {
+    padding: 0 16px 16px;
+  }
 }
 
 .accordion summary::-webkit-details-marker {
@@ -861,4 +933,22 @@ a:hover {
   grid-template-columns: 1fr;
   max-width: 820px;
   margin-inline: auto;
+}
+
+/* Kontakt-Überschriften in Großbuchstaben (nur Darstellung) */
+.contact-card .h3 {
+  text-transform: uppercase;
+}
+
+/* Hinweis unter einer Termin-Karte (z. B. gemeinsames Mittagessen) */
+.event .event-note {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid #dde3ea;
+  color: var(--text);
+}
+
+.event .event-note strong {
+  display: block;
+  color: var(--dark);
 }
