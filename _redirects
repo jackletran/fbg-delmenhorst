@@ -1,0 +1,14 @@
+# Netlify-Weiterleitungen (https://docs.netlify.com/routing/redirects/)
+# Alte Bild-Adressen -> neue Dateien (damit gespeicherte/verlinkte Links weiter funktionieren)
+/Images/veranstaltungsplan*   /assets/img/veranstaltungsplan.png   301
+/images/veranstaltungsplan*   /assets/img/veranstaltungsplan.png   301
+/Images/favicon-32x32.png     /assets/img/favicon-32x32.png        301
+/images/favicon-32x32.png     /assets/img/favicon-32x32.png        301
+/Images/cross.jpg             /assets/img/cross-1600.jpg           301
+/images/cross.jpg             /assets/img/cross-1600.jpg           301
+/Images/bible.jpg             /assets/img/bible-900.jpg            301
+/images/bible.jpg             /assets/img/bible-900.jpg            301
+/favicon.ico                  /assets/img/favicon-32x32.png        200
+/html/*                       /                                    301
+# Werkzeuge nicht öffentlich ausliefern
+/tools/*                      /404.html                            404!

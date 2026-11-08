@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Freie Bibelgemeinde Delmenhorst – Gottesdienst sonntags 10:30 Uhr</title>
-    <meta name="description" content="Freie Bibelgemeinde Delmenhorst: Gottesdienst sonntags um 10:30 Uhr in der Brandenburger Str. 12, 27755 Delmenhorst. Bibelkreis, Kinderstunde &amp; Jungschar, Gebetsstunde und Jugendstunde unter der Woche.">
+    <title>Freie Bibelgemeinde Delmenhorst – Gottesdienst sonntags 10:30–12 Uhr</title>
+    <meta name="description" content="Freie Bibelgemeinde Delmenhorst: Gottesdienst sonntags 10:30–12 Uhr mit Kinderstunde, Brandenburger Str. 12, 27755 Delmenhorst. Parkplätze direkt vor dem Gebäude. Bibelkreis, Jungschar, Gebets- und Jugendstunde unter der Woche.">
     <link rel="canonical" href="https://www.fbg-delmenhorst.de/">
     <meta name="robots" content="index, follow, max-image-preview:large">
     <meta name="theme-color" content="#002240">
@@ -13,7 +13,7 @@
     <meta property="og:locale" content="de_DE">
     <meta property="og:site_name" content="Freie Bibelgemeinde Delmenhorst">
     <meta property="og:title" content="Freie Bibelgemeinde Delmenhorst">
-    <meta property="og:description" content="Wir laden Dich herzlich im Namen unseres Herrn Jesus Christus zu all unseren Gemeindeveranstaltungen ein. Gottesdienst sonntags um 10:30 Uhr.">
+    <meta property="og:description" content="Wir laden Dich herzlich im Namen unseres Herrn Jesus Christus zu all unseren Gemeindeveranstaltungen ein. Gottesdienst sonntags von 10:30 bis 12 Uhr.">
     <meta property="og:url" content="https://www.fbg-delmenhorst.de/">
     <meta property="og:image" content="https://www.fbg-delmenhorst.de/assets/img/og-image.jpg">
     <meta property="og:image:width" content="1200">
@@ -21,7 +21,7 @@
     <meta name="twitter:card" content="summary_large_image">
 
     <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-    <link rel="icon" href="images/favicon-32x32.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="assets/img/favicon-32x32.png" type="image/png" sizes="32x32">
     <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
     <link rel="manifest" href="site.webmanifest">
 
@@ -39,7 +39,12 @@
           "@id": "https://www.fbg-delmenhorst.de/#gemeinde",
           "name": "Freie Bibelgemeinde Delmenhorst",
           "alternateName": "FBG Delmenhorst",
-          "description": "Freikirchliche, unabhängige Bibelgemeinde in Delmenhorst (eingetragener Verein). Gottesdienst jeden Sonntag um 10:30 Uhr.",
+          "description": "Freikirchliche, unabhängige Bibelgemeinde in Delmenhorst (eingetragener Verein). Gottesdienst jeden Sonntag von 10:30 bis 12 Uhr, sonntags mit Kinderstunden und Kinderräumen. Parkplätze direkt vor dem Gebäude.",
+          "amenityFeature": [
+            { "@type": "LocationFeatureSpecification", "name": "Parkplätze direkt vor dem Gebäude", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Toiletten", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Kinderräume", "value": true }
+          ],
           "url": "https://www.fbg-delmenhorst.de/",
           "logo": "https://www.fbg-delmenhorst.de/assets/img/icon-512.png",
           "image": "https://www.fbg-delmenhorst.de/assets/img/og-image.jpg",
@@ -56,14 +61,14 @@
           "isAccessibleForFree": true,
           "publicAccess": true,
           "openingHoursSpecification": [
-            { "@type": "OpeningHoursSpecification", "name": "Gottesdienst", "dayOfWeek": "https://schema.org/Sunday", "opens": "10:30" },
+            { "@type": "OpeningHoursSpecification", "name": "Gottesdienst", "dayOfWeek": "https://schema.org/Sunday", "opens": "10:30", "closes": "12:00" },
             { "@type": "OpeningHoursSpecification", "name": "Bibelkreis", "dayOfWeek": "https://schema.org/Tuesday", "opens": "19:15" },
             { "@type": "OpeningHoursSpecification", "name": "Kinderstunde & Jungschar", "dayOfWeek": "https://schema.org/Wednesday", "opens": "17:30" },
             { "@type": "OpeningHoursSpecification", "name": "Gebetsstunde (jeden 3. Donnerstag um 18:30)", "dayOfWeek": "https://schema.org/Thursday", "opens": "19:00" },
             { "@type": "OpeningHoursSpecification", "name": "Jugendstunde", "dayOfWeek": "https://schema.org/Friday", "opens": "19:00" }
           ],
           "event": [
-            { "@type": "Event", "name": "Gottesdienst", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "isAccessibleForFree": true, "location": { "@id": "https://www.fbg-delmenhorst.de/#gemeinde" }, "eventSchedule": { "@type": "Schedule", "repeatFrequency": "P1W", "byDay": "https://schema.org/Sunday", "startTime": "10:30", "scheduleTimezone": "Europe/Berlin" } },
+            { "@type": "Event", "name": "Gottesdienst", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "isAccessibleForFree": true, "location": { "@id": "https://www.fbg-delmenhorst.de/#gemeinde" }, "eventSchedule": { "@type": "Schedule", "repeatFrequency": "P1W", "byDay": "https://schema.org/Sunday", "startTime": "10:30", "endTime": "12:00", "scheduleTimezone": "Europe/Berlin" } },
             { "@type": "Event", "name": "Bibelkreis", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "isAccessibleForFree": true, "location": { "@id": "https://www.fbg-delmenhorst.de/#gemeinde" }, "eventSchedule": { "@type": "Schedule", "repeatFrequency": "P1W", "byDay": "https://schema.org/Tuesday", "startTime": "19:15", "scheduleTimezone": "Europe/Berlin" } },
             { "@type": "Event", "name": "Kinderstunde & Jungschar", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "isAccessibleForFree": true, "location": { "@id": "https://www.fbg-delmenhorst.de/#gemeinde" }, "eventSchedule": { "@type": "Schedule", "repeatFrequency": "P1W", "byDay": "https://schema.org/Wednesday", "startTime": "17:30", "scheduleTimezone": "Europe/Berlin" } },
             { "@type": "Event", "name": "Gebetsstunde", "description": "Donnerstag 19 Uhr (jeden 3. Donnerstag um 18:30)", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "isAccessibleForFree": true, "location": { "@id": "https://www.fbg-delmenhorst.de/#gemeinde" }, "eventSchedule": { "@type": "Schedule", "repeatFrequency": "P1W", "byDay": "https://schema.org/Thursday", "startTime": "19:00", "scheduleTimezone": "Europe/Berlin" } },
@@ -80,6 +85,71 @@
         }
       ]
     }
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "de-DE",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wann findet der Gottesdienst statt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Jeden Sonntag von 10:30 bis 12 Uhr in der Brandenburger Str. 12, 27755 Delmenhorst. Du bist jederzeit herzlich eingeladen – komm einfach vorbei!"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Gibt es etwas für Kinder?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Am Sonntag gibt es Kinderstunden und eigene Kinderräume. Außerdem treffen sich Kinderstunde & Jungschar jeden Mittwoch um 17:30 Uhr."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Gibt es Parkplätze?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, Parkplätze gibt es direkt vor dem Gebäude."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Gibt es Toiletten?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, Toiletten sind vorhanden."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Muss ich etwas mitbringen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Du musst nichts mitbringen - offene Ohren und ein aufgeschlossenes Herz sind aber immer gut!"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Zu welcher Kirche gehört die Freie Bibelgemeinde?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wir verstehen uns als eine freikirchliche Einrichtung, das heißt keinem Gemeindeverband zugehörig. Wir sind unabhängig vom Staat und erheben keine Kirchensteuern. Mehr dazu unter Unser Glaube."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie kann ich Kontakt aufnehmen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Unseren Gemeindeältesten Waldemar Weber erreichst du telefonisch und per WhatsApp unter +49 15561 548384. Alle Möglichkeiten findest du auf der Kontaktseite."
+      }
+    }
+  ]
+}
     </script>
 </head>
 <body>
@@ -114,7 +184,7 @@
                     <p>Wir laden Dich herzlich im Namen unseres Herrn Jesus Christus zu all unseren Gemeindeveranstaltungen ein - alle Termine findest Du untenstehend.</p>
                     <p>Wir freuen uns auf Deinen Besuch bei uns und wünschen Dir den reichen Segen Jesu Christi!</p>
                     <div class="btn-row">
-                        <a class="btn btn-outline-light" href="images/veranstaltungsplan_2025_01.jpg" download="Veranstaltungsplan-FBG-Delmenhorst.png">
+                        <a class="btn btn-outline-light" href="assets/img/veranstaltungsplan.png" download="Veranstaltungsplan-FBG-Delmenhorst.png">
                             <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#i-download"></use></svg>
                             Veranstaltungsplan herunterladen
                         </a>
@@ -130,7 +200,7 @@
                 <article class="event event-featured">
                     <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#i-church"></use></svg>
                     <h3>Gottesdienst</h3>
-                    <p>Sonntag <span class="time"><time datetime="10:30">10:30 Uhr</time></span></p>
+                    <p>Sonntag <span class="time"><time datetime="10:30">10:30</time> – <time datetime="12:00">12 Uhr</time></span></p>
                 </article>
 
                 <h2 class="section-head" id="woche">Veranstaltungen in der Woche</h2>
@@ -156,6 +226,43 @@
                         <p>Freitag <span class="time"><time datetime="19:00">19 Uhr</time></span></p>
                     </li>
                 </ul>
+            </div>
+        </section>
+
+        <!-- Häufige Fragen -->
+        <section class="section" id="faq" aria-labelledby="faq-titel">
+            <div class="container">
+                <h2 class="section-head" id="faq-titel">Häufige Fragen</h2>
+                <div class="accordion accordion-single">
+                    <details>
+                        <summary>Wann findet der Gottesdienst statt?</summary>
+                        <div class="content"><p>Jeden Sonntag von 10:30 bis 12 Uhr in der Brandenburger Str. 12, 27755 Delmenhorst. Du bist jederzeit herzlich eingeladen – komm einfach vorbei!</p></div>
+                    </details>
+                    <details>
+                        <summary>Gibt es etwas für Kinder?</summary>
+                        <div class="content"><p>Ja. Am Sonntag gibt es Kinderstunden und eigene Kinderräume. Außerdem treffen sich Kinderstunde &amp; Jungschar jeden Mittwoch um 17:30 Uhr.</p></div>
+                    </details>
+                    <details>
+                        <summary>Gibt es Parkplätze?</summary>
+                        <div class="content"><p>Ja, Parkplätze gibt es direkt vor dem Gebäude.</p></div>
+                    </details>
+                    <details>
+                        <summary>Gibt es Toiletten?</summary>
+                        <div class="content"><p>Ja, Toiletten sind vorhanden.</p></div>
+                    </details>
+                    <details>
+                        <summary>Muss ich etwas mitbringen?</summary>
+                        <div class="content"><p>Du musst nichts mitbringen - offene Ohren und ein aufgeschlossenes Herz sind aber immer gut!</p></div>
+                    </details>
+                    <details>
+                        <summary>Zu welcher Kirche gehört die Freie Bibelgemeinde?</summary>
+                        <div class="content"><p>Wir verstehen uns als eine freikirchliche Einrichtung, das heißt keinem Gemeindeverband zugehörig. Wir sind unabhängig vom Staat und erheben keine Kirchensteuern. Mehr dazu unter <a href="unserglaube.html">Unser Glaube</a>.</p></div>
+                    </details>
+                    <details>
+                        <summary>Wie kann ich Kontakt aufnehmen?</summary>
+                        <div class="content"><p>Unseren Gemeindeältesten Waldemar Weber erreichst du telefonisch und per WhatsApp unter <a href="tel:+4915561548384">+49 15561 548384</a>. Alle Möglichkeiten findest du auf der <a href="kontakt.html">Kontaktseite</a>.</p></div>
+                    </details>
+                </div>
             </div>
         </section>
 

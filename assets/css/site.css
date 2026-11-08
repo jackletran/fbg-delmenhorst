@@ -1,7 +1,5 @@
 /* ==========================================================================
    Freie Bibelgemeinde Delmenhorst – Stylesheet
-   Ersetzt css/style.css + css/utilities.css (die alten Dateien bleiben nur
-   für html/veranstaltungsplan.html erhalten).
    ========================================================================== */
 
 /* Schriften lokal gehostet (DSGVO: keine Verbindung zu Google Fonts) */
@@ -856,4 +854,11 @@ a:hover {
   font-weight: 700;
   color: var(--dark);
   letter-spacing: 0.02em;
+}
+
+/* FAQ: einspaltig, schmaler */
+.accordion-single {
+  grid-template-columns: 1fr;
+  max-width: 820px;
+  margin-inline: auto;
 }

@@ -2,6 +2,5 @@
 # die Seite lesen, damit die Gemeinde auch dort gefunden wird (GEO).
 User-agent: *
 Allow: /
-Disallow: /html/
 
 Sitemap: https://www.fbg-delmenhorst.de/sitemap.xml
