@@ -1,135 +1,211 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Freie Bibelgemeinde Delmenhorst</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="../Images/favicon-32x32.png">
-    <link rel="stylesheet" href="../css/utilities.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Freie Bibelgemeinde Delmenhorst – Gottesdienst sonntags 10:30 Uhr</title>
+    <meta name="description" content="Freie Bibelgemeinde Delmenhorst: Gottesdienst sonntags um 10:30 Uhr in der Brandenburger Str. 12, 27755 Delmenhorst. Bibelkreis, Kinderstunde &amp; Jungschar, Gebetsstunde und Jugendstunde unter der Woche.">
+    <link rel="canonical" href="https://www.fbg-delmenhorst.de/">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#002240">
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:site_name" content="Freie Bibelgemeinde Delmenhorst">
+    <meta property="og:title" content="Freie Bibelgemeinde Delmenhorst">
+    <meta property="og:description" content="Wir laden Dich herzlich im Namen unseres Herrn Jesus Christus zu all unseren Gemeindeveranstaltungen ein. Gottesdienst sonntags um 10:30 Uhr.">
+    <meta property="og:url" content="https://www.fbg-delmenhorst.de/">
+    <meta property="og:image" content="https://www.fbg-delmenhorst.de/assets/img/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="images/favicon-32x32.png" type="image/png" sizes="32x32">
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <link rel="preload" href="assets/fonts/lato-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" as="image" href="assets/img/cross-1600.webp" imagesrcset="assets/img/cross-800.webp 800w, assets/img/cross-1600.webp 1600w, assets/img/cross-2400.webp 2400w" imagesizes="100vw" type="image/webp">
+    <link rel="stylesheet" href="assets/css/site.css">
+    <script src="assets/js/site.js" defer></script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Church",
+          "@id": "https://www.fbg-delmenhorst.de/#gemeinde",
+          "name": "Freie Bibelgemeinde Delmenhorst",
+          "alternateName": "FBG Delmenhorst",
+          "description": "Freikirchliche, unabhängige Bibelgemeinde in Delmenhorst (eingetragener Verein). Gottesdienst jeden Sonntag um 10:30 Uhr.",
+          "url": "https://www.fbg-delmenhorst.de/",
+          "logo": "https://www.fbg-delmenhorst.de/assets/img/icon-512.png",
+          "image": "https://www.fbg-delmenhorst.de/assets/img/og-image.jpg",
+          "telephone": "+49 15561 548384",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Brandenburger Str. 12",
+            "postalCode": "27755",
+            "addressLocality": "Delmenhorst",
+            "addressRegion": "Niedersachsen",
+            "addressCountry": "DE"
+          },
+          "hasMap": "https://goo.gl/maps/orZxkBa9smkP4suB9",
+          "isAccessibleForFree": true,
+          "publicAccess": true,
+          "openingHoursSpecification": [
+            { "@type": "OpeningHoursSpecification", "name": "Gottesdienst", "dayOfWeek": "https://schema.org/Sunday", "opens": "10:30" },
+            { "@type": "OpeningHoursSpecification", "name": "Bibelkreis", "dayOfWeek": "https://schema.org/Tuesday", "opens": "19:15" },
+            { "@type": "OpeningHoursSpecification", "name": "Kinderstunde & Jungschar", "dayOfWeek": "https://schema.org/Wednesday", "opens": "17:30" },
+            { "@type": "OpeningHoursSpecification", "name": "Gebetsstunde (jeden 3. Donnerstag um 18:30)", "dayOfWeek": "https://schema.org/Thursday", "opens": "19:00" },
+            { "@type": "OpeningHoursSpecification", "name": "Jugendstunde", "dayOfWeek": "https://schema.org/Friday", "opens": "19:00" }
+          ],
+          "event": [
+            { "@type": "Event", "name": "Gottesdienst", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "isAccessibleForFree": true, "location": { "@id": "https://www.fbg-delmenhorst.de/#gemeinde" }, "eventSchedule": { "@type": "Schedule", "repeatFrequency": "P1W", "byDay": "https://schema.org/Sunday", "startTime": "10:30", "scheduleTimezone": "Europe/Berlin" } },
+            { "@type": "Event", "name": "Bibelkreis", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "isAccessibleForFree": true, "location": { "@id": "https://www.fbg-delmenhorst.de/#gemeinde" }, "eventSchedule": { "@type": "Schedule", "repeatFrequency": "P1W", "byDay": "https://schema.org/Tuesday", "startTime": "19:15", "scheduleTimezone": "Europe/Berlin" } },
+            { "@type": "Event", "name": "Kinderstunde & Jungschar", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "isAccessibleForFree": true, "location": { "@id": "https://www.fbg-delmenhorst.de/#gemeinde" }, "eventSchedule": { "@type": "Schedule", "repeatFrequency": "P1W", "byDay": "https://schema.org/Wednesday", "startTime": "17:30", "scheduleTimezone": "Europe/Berlin" } },
+            { "@type": "Event", "name": "Gebetsstunde", "description": "Donnerstag 19 Uhr (jeden 3. Donnerstag um 18:30)", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "isAccessibleForFree": true, "location": { "@id": "https://www.fbg-delmenhorst.de/#gemeinde" }, "eventSchedule": { "@type": "Schedule", "repeatFrequency": "P1W", "byDay": "https://schema.org/Thursday", "startTime": "19:00", "scheduleTimezone": "Europe/Berlin" } },
+            { "@type": "Event", "name": "Jugendstunde", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "isAccessibleForFree": true, "location": { "@id": "https://www.fbg-delmenhorst.de/#gemeinde" }, "eventSchedule": { "@type": "Schedule", "repeatFrequency": "P1W", "byDay": "https://schema.org/Friday", "startTime": "19:00", "scheduleTimezone": "Europe/Berlin" } }
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://www.fbg-delmenhorst.de/#website",
+          "url": "https://www.fbg-delmenhorst.de/",
+          "name": "Freie Bibelgemeinde Delmenhorst",
+          "inLanguage": "de-DE",
+          "publisher": { "@id": "https://www.fbg-delmenhorst.de/#gemeinde" }
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
-    <!-- Navbar -->
-    <div class="navbar">
-        <div class="container flex">
-            <a href="./index.html"><h1 class="logo">Freie Bibelgemeinde Delmenhorst</h1></a>
-            <nav>
+    <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+
+    <header class="site-header">
+        <div class="container">
+            <a class="brand" href="./" aria-label="Freie Bibelgemeinde Delmenhorst – Startseite">
+                <img src="assets/img/favicon.svg" alt="" width="32" height="32">
+                <span>Freie Bibelgemeinde Delmenhorst</span>
+            </a>
+            <nav class="main-nav" aria-label="Hauptnavigation">
                 <ul>
-                    <li><a class="navlinks" href="./index.html">Home</a></li>
-                    <li><a class="navlinks" href="./unserglaube.html">Unser Glaube</a></li>
-                    <li><a class="navlinks" href="./kontakt.html">Kontakt</a></li>
+                    <li><a href="./" aria-current="page">Home</a></li>
+                    <li><a href="unserglaube.html">Unser Glaube</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
                 </ul>
             </nav>
         </div>
-    </div>
+    </header>
 
-    <!-- Showcase -->
-    <section class="showcase">
-        <div class="container grid">
-            <div></div>
-            <div class="showcase-text-frame">
-                <div class="showcase-text">
-                <h1>Herzlich Willkommen!</h1>
-                <p>Wir laden Dich herzlich im Namen unseres Herrn Jesus Christus zu all unseren Gemeindeveranstaltungen ein - alle Termine findest Du untenstehend.
-                </p>
-                <p>Wir freuen uns auf Deinen Besuch bei uns und wünschen Dir den reichen Segen Jesu Christi!
-                </p>
-                <a download class="btn btn-outline" href="./Images/veranstaltungsplan_2025_01.jpg">Veranstaltungsplan herunterladen</a>
-            </div>
-        </div>
-        </div>
-    </section>
-
-<!-- Gottesdienst am Sonntag -->
-<section class="sonntag">
-    <div class="container">
-        <h2 class="stats-heading text-center my-1">
-            Gottesdienst am Sonntag
-            </h3>
-            <div class="grid grid-1 text-center my-4">
-                <!-- Sonntag -->
-                <div>
-                    <i class="fas fa-church fa-3x"></i>
-                    <h3>Gottesdienst</h3>
-                          <p class="text-secondary">Sonntag<br>10:30 Uhr</p>
-
+    <main id="inhalt">
+        <!-- Begrüßung -->
+        <section class="hero" aria-labelledby="willkommen">
+            <picture>
+                <source type="image/webp" srcset="assets/img/cross-800.webp 800w, assets/img/cross-1600.webp 1600w, assets/img/cross-2400.webp 2400w" sizes="100vw">
+                <img src="assets/img/cross-1600.jpg" srcset="assets/img/cross-800.jpg 800w, assets/img/cross-1600.jpg 1600w, assets/img/cross-2400.jpg 2400w" sizes="100vw" alt="Ein schlichtes Holzkreuz vor blauem Himmel mit Wolken" width="1600" height="1201" fetchpriority="high">
+            </picture>
+            <div class="container">
+                <div class="hero-panel">
+                    <h1 id="willkommen">Herzlich willkommen!</h1>
+                    <p>Wir laden Dich herzlich im Namen unseres Herrn Jesus Christus zu all unseren Gemeindeveranstaltungen ein - alle Termine findest Du untenstehend.</p>
+                    <p>Wir freuen uns auf Deinen Besuch bei uns und wünschen Dir den reichen Segen Jesu Christi!</p>
+                    <div class="btn-row">
+                        <a class="btn btn-outline-light" href="images/veranstaltungsplan_2025_01.jpg" download="Veranstaltungsplan-FBG-Delmenhorst.png">
+                            <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#i-download"></use></svg>
+                            Veranstaltungsplan herunterladen
+                        </a>
+                    </div>
                 </div>
             </div>
-    </div>
-</section>
+        </section>
 
+        <!-- Gottesdienst am Sonntag & Veranstaltungen in der Woche -->
+        <section class="section section-light" id="termine" aria-labelledby="sonntag">
+            <div class="container">
+                <h2 class="section-head" id="sonntag">Gottesdienst am Sonntag</h2>
+                <article class="event event-featured">
+                    <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#i-church"></use></svg>
+                    <h3>Gottesdienst</h3>
+                    <p>Sonntag <span class="time"><time datetime="10:30">10:30 Uhr</time></span></p>
+                </article>
 
-    <!-- Veranstaltungen in der Woche -->
-    <section class="woche">
-    <div class="container">
-        <h2 class="stats-heading text-center my-1">
-            Veranstaltungen in der Woche
-        </h3>
-        <div class="grid grid-4 text-center my-4">
-            <!-- Dienstag -->
-            <div>
-                    <i class="fas fa-bible fa-3x"></i>
-                    <h3>Bibelkreis</h3>
-                    <p class="text-secondary">Dienstag <br>19:15 Uhr</p>
+                <h2 class="section-head" id="woche">Veranstaltungen in der Woche</h2>
+                <ul class="event-grid" aria-labelledby="woche">
+                    <li class="event">
+                        <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#i-book-bible"></use></svg>
+                        <h3>Bibelkreis</h3>
+                        <p>Dienstag <span class="time"><time datetime="19:15">19:15 Uhr</time></span></p>
+                    </li>
+                    <li class="event">
+                        <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#i-dove"></use></svg>
+                        <h3>Kinderstunde &amp; Jungschar</h3>
+                        <p>Mittwoch <span class="time"><time datetime="17:30">17:30 Uhr</time></span></p>
+                    </li>
+                    <li class="event">
+                        <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#i-person-praying"></use></svg>
+                        <h3>Gebetsstunde</h3>
+                        <p>Donnerstag <span class="time"><time datetime="19:00">19 Uhr</time></span>(jeden 3. Donnerstag um 18:30)</p>
+                    </li>
+                    <li class="event">
+                        <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#i-handshake-angle"></use></svg>
+                        <h3>Jugendstunde</h3>
+                        <p>Freitag <span class="time"><time datetime="19:00">19 Uhr</time></span></p>
+                    </li>
+                </ul>
             </div>
-            <!-- Mittwoch -->
-            <div>
-                    <i class="fas fa-dove fa-3x"></i>
-                    <h3>Kinderstunde & Jungschar</h3>
-                    <p class="text-secondary">Mittwoch <br>17:30 Uhr</p>
+        </section>
+
+        <!-- Einladung & Anfahrt -->
+        <section class="section visit" aria-labelledby="einladung">
+            <div class="container visit-grid">
+                <div>
+                    <h2 id="einladung">Wir laden dich ganz herzlich ein!</h2>
+                    <p>Du bist jederzeit herzlich eingeladen zu all unseren Gemeindeveranstaltungen. Komm einfach vorbei!</p>
+                    <address>Brandenburger Str. 12<br>27755 Delmenhorst</address>
+                    <a class="btn btn-light" href="https://goo.gl/maps/orZxkBa9smkP4suB9" target="_blank" rel="noopener">
+                        <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#i-route"></use></svg>
+                        Route anzeigen<span class="visually-hidden"> (öffnet Google Maps in neuem Tab)</span>
+                    </a>
+                </div>
+                <div class="map"
+                     data-map-src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBpiGf-qNlzyMrRhEbxO8mZG5QvHYHvd2c&amp;q=Brandenburger+Str.+12,+Delmenhorst&amp;zoom=13&amp;maptype=roadmap"
+                     data-map-title="Karte: Brandenburger Str. 12, Delmenhorst">
+                    <div class="map-consent">
+                        <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#i-map"></use></svg>
+                        <p>Zum Schutz Deiner Daten wird die Karte von Google Maps erst nach Klick geladen. Dabei werden Daten (u.&nbsp;a. Deine IP-Adresse) an Google übertragen. <a href="datenschutz.html#google-maps">Mehr erfahren</a></p>
+                        <button type="button" class="btn btn-light" data-map-load hidden>Karte laden</button>
+                        <label hidden><input type="checkbox" data-map-remember> Karte künftig immer laden</label>
+                    </div>
+                </div>
             </div>
-            <!-- Donnerstag -->
-            <div>
-                        <i class="fas fa-pray fa-3x"></i>
-                <h3>Gebetsstunde</h3>
-                <p class="text-secondary">Donnerstag <br>19 Uhr<br>(jeden 3. Donnerstag um 18:30)</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <p class="footer-title">Freie Bibelgemeinde Delmenhorst</p>
+                    <p>Copyright &copy; <span data-year>2026</span></p>
+                </div>
+                <ul class="footer-contact" aria-label="Kontakt">
+                    <li><a href="https://goo.gl/maps/orZxkBa9smkP4suB9" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#i-location-dot"></use></svg>Brandenburger Str. 12, Delmenhorst 27755</a></li>
+                    <li><a href="https://wa.me/4915561548384?text=Hallo%20liebe%20Freie%20Bibelgemeinde%20Delmenhorst!%20Ich%20war%20auf%20eurer%20Webseite%20und%20h%C3%A4tte%20da%20eine%20nette%20Frage...%20" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#i-whatsapp"></use></svg><span class="visually-hidden">WhatsApp: </span>+49 15561 548384</a></li>
+                    <li><a href="tel:+4915561548384"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#i-phone"></use></svg><span class="visually-hidden">Telefon: </span>+49 15561 548384</a></li>
+                    <li><a href="kontakt.html#email" data-mail-user="fbg.delmenhorst" data-mail-domain="gmail.com"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#i-envelope"></use></svg><span class="visually-hidden">E-Mail: </span><span data-mail-text>fbg.delmenhorst [at] gmail.com</span></a></li>
+                </ul>
             </div>
-            <!-- Freitag -->
-            <div>
-                <i class="fas fa-hands-helping fa-3x"></i>
-                <h3>Jugendstunde</h3>
-                <p class="text-secondary">Freitag <br>19 Uhr</p>
+            <div class="footer-bottom">
+                <ul>
+                    <li><a href="impressum.html">Impressum</a></li>
+                    <li><a href="datenschutz.html">Datenschutz</a></li>
+                </ul>
             </div>
         </div>
-    </div>
-    </section>
-
-    <!-- Cloud -->
-    <section class="cloud bg-primary py-2">
-    <div class="container flex">
-        <div class="text-center m-4">
-            <h2 class="md">Wir laden dich ganz herzlich ein!</h2>
-            <p class="sm lead my-1">Du bist jederzeit herzlich eingeladen zu all unseren Gemeindeveranstaltungen. Komm einfach vorbei!</p>
-            <a target="_blank" href="https://goo.gl/maps/orZxkBa9smkP4suB9" class="btn btn-dark">Route anzeigen</a>
-        </div>
-        <iframe
-            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBpiGf-qNlzyMrRhEbxO8mZG5QvHYHvd2c&amp;q=Brandenburger+Str.+12,+Delmenhorst&amp;zoom=13&amp;maptype=roadmap">
-        </iframe>
-    </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer bg-dark py-5">
-    <div class="container grid grid-2">
-        <div>
-            <h1>Freie Bibelgemeinde Delmenhorst</h1>
-            <p>Copyright &copy; 2025</p>
-        </div>
-        <nav>
-            <ul>
-                <li><a target="_blank" href="https://goo.gl/maps/orZxkBa9smkP4suB9" class="fas fa-map-marker-alt fa-2x social"></a>Brandenburger Str. 12, Delmenhorst 27755</li>
-
-                <li><a target="_blank" href="https://wa.me/+4917660300844?text=Hallo%20liebe%20Freie%20Bibelgemeinde%20Delmenhorst!%20Ich%20war%20auf%20eurer%20Webseite%20und%20hätte%20da%20eine%20nette%20Frage...%20" class="fab fa-whatsapp fa-2x social"></a>+49 1525 4049700</li>
-
-                <li><a href="tel:+49 1525 4049700" class="fa-solid fa-phone fa-2x social"></a>+49 1525 4049700</li>
-
-                <li><a href="mailto:fbg.delmenhorst@gmail.com?Subject=Some%20subject" class="fas fa-envelope fa-2x social"></a>fbg.delmenhorst@gmail.com</li>
-            </ul>
-        </nav>
     </footer>
 </body>
 </html>

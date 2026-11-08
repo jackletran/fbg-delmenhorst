@@ -1,107 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Freie Bibelgemeinde Delmenhorst</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="../Images/favicon-32x32.png">
-    <link rel="stylesheet" href="../css/utilities.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kontakt – Anrufen, E-Mail, WhatsApp, Besuchen | Freie Bibelgemeinde Delmenhorst</title>
+    <meta name="description" content="Kontakt zur Freien Bibelgemeinde Delmenhorst: Gemeindeältester Waldemar Weber, Telefon und WhatsApp +49 15561 548384, E-Mail, Adresse Brandenburger Str. 12, 27755 Delmenhorst.">
+    <link rel="canonical" href="https://www.fbg-delmenhorst.de/kontakt">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#002240">
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:site_name" content="Freie Bibelgemeinde Delmenhorst">
+    <meta property="og:title" content="Kontakt – Freie Bibelgemeinde Delmenhorst">
+    <meta property="og:description" content="Anrufen, E-Mail schreiben, WhatsApp Nachricht schreiben oder einfach vorbeikommen.">
+    <meta property="og:url" content="https://www.fbg-delmenhorst.de/kontakt">
+    <meta property="og:image" content="https://www.fbg-delmenhorst.de/assets/img/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="images/favicon-32x32.png" type="image/png" sizes="32x32">
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <link rel="preload" href="assets/fonts/lato-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="assets/css/site.css">
+    <script src="assets/js/site.js" defer></script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "name": "Kontakt",
+      "url": "https://www.fbg-delmenhorst.de/kontakt",
+      "inLanguage": "de-DE",
+      "isPartOf": { "@id": "https://www.fbg-delmenhorst.de/#website" },
+      "about": { "@id": "https://www.fbg-delmenhorst.de/#gemeinde" },
+      "mainEntity": {
+        "@type": "Person",
+        "name": "Waldemar Weber",
+        "jobTitle": "Gemeindeältester",
+        "telephone": "+49 15561 548384",
+        "worksFor": { "@id": "https://www.fbg-delmenhorst.de/#gemeinde" }
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.fbg-delmenhorst.de/" },
+          { "@type": "ListItem", "position": 2, "name": "Kontakt", "item": "https://www.fbg-delmenhorst.de/kontakt" }
+        ]
+      }
+    }
+    </script>
 </head>
-
 <body>
-    <!-- Navbar -->
-    <div class="navbar">
-        <div class="container flex">
-            <a href="./index.html"><h1 class="logo">Freie Bibelgemeinde Delmenhorst</h1></a>
-            <nav>
+    <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+
+    <header class="site-header">
+        <div class="container">
+            <a class="brand" href="./" aria-label="Freie Bibelgemeinde Delmenhorst – Startseite">
+                <img src="assets/img/favicon.svg" alt="" width="32" height="32">
+                <span>Freie Bibelgemeinde Delmenhorst</span>
+            </a>
+            <nav class="main-nav" aria-label="Hauptnavigation">
                 <ul>
-                    <li><a class="navlinks" href="./index.html">Home</a></li>
-                    <li><a class="navlinks" href="./unserglaube.html">Unser Glaube</a></li>
-                    <li><a class="navlinks" href="./kontakt.html">Kontakt</a></li>
+                    <li><a href="./">Home</a></li>
+                    <li><a href="unserglaube.html">Unser Glaube</a></li>
+                    <li><a href="kontakt.html" aria-current="page">Kontakt</a></li>
                 </ul>
             </nav>
         </div>
-    </div>
+    </header>
 
-<section class="features-main my-2">
-    <div class="container grid">
-        <div class="wrap-collabsible card">
-            <input id="anrufen" class="toggle" type="checkbox">
-            <label for="anrufen" class="lbl-toggle">ANRUFEN</label>
-            <div class="collapsible-content">
-                <div class="content-inner">
-                    <!-- <i class="fas fa-server fa-3x"></i> -->
-                    <p>Unter folgender Nummer kannst Du Waldemar Weber, unseren Gemeindeältesten erreichen. Er ist offen für deine Fragen und Anregungen. Drücke einfach auf das Telefon-Symbol oder wähle die Nummer auf deinem Telefon. <br><br> <a href="tel:+4915561548384" class="fa-solid fa-phone fa-2x social"></a>+49 15561 548384
-</p>
+    <main id="inhalt">
+        <section class="section section-light">
+            <div class="container">
+                <h1 class="visually-hidden">Kontakt</h1>
+                <div class="contact-grid">
+                    <article class="contact-card" id="anrufen">
+                        <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#i-phone"></use></svg>
+                        <h2 class="h3">ANRUFEN</h2>
+                        <p>Unter folgender Nummer kannst Du Waldemar Weber, unseren Gemeindeältesten erreichen. Er ist offen für deine Fragen und Anregungen. Drücke einfach auf das Telefon-Symbol oder wähle die Nummer auf deinem Telefon.</p>
+                        <a class="btn btn-primary" href="tel:+4915561548384">
+                            <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#i-phone"></use></svg>
+                            <span class="visually-hidden">Anrufen: </span>+49 15561 548384
+                        </a>
+                    </article>
+
+                    <article class="contact-card" id="email">
+                        <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#i-envelope"></use></svg>
+                        <h2 class="h3">E-MAIL SCHREIBEN</h2>
+                        <p>Du möchtest uns gerne schriftlich etwas mitteilen oder fragen? Gerne kannst du uns eine Mail an die untenstehende E-Mail-Adresse schicken. Wir melden uns dann schnellstmöglich bei dir zurück, um auf dein Anliegen zu antworten. Drücke zum Verfassen einer E-Mail entweder direkt auf das E-Mail-Symbol oder kopiere diese E-Mail-Adresse und füge sie in deine Empfängerzeile ein.</p>
+                        <a class="btn btn-primary" href="#email" data-mail-user="fbg.delmenhorst" data-mail-domain="gmail.com">
+                            <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#i-envelope"></use></svg>
+                            <span class="visually-hidden">E-Mail: </span><span data-mail-text>fbg.delmenhorst [at] gmail.com</span>
+                        </a>
+                    </article>
+
+                    <article class="contact-card" id="whatsapp">
+                        <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#i-whatsapp"></use></svg>
+                        <h2 class="h3">WHATSAPP NACHRICHT SCHREIBEN</h2>
+                        <p>Unter dieser Nummer kannst du unseren Gemeindeältesten auf WhatsApp erreichen. Schreibe ihm eine freundliche Nachricht, er wird sich sobald wie möglich bei dir zurückmelden.</p>
+                        <a class="btn btn-primary" href="https://wa.me/4915561548384?text=Hallo%20liebe%20Freie%20Bibelgemeinde%20Delmenhorst!%20Ich%20war%20auf%20eurer%20Webseite%20und%20h%C3%A4tte%20da%20eine%20nette%20Frage...%20" target="_blank" rel="noopener">
+                            <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#i-whatsapp"></use></svg>
+                            <span class="visually-hidden">WhatsApp: </span>+49 15561 548384
+                        </a>
+                    </article>
+
+                    <article class="contact-card" id="besuchen">
+                        <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#i-location-dot"></use></svg>
+                        <h2 class="h3">BESUCHEN</h2>
+                        <p>Dir sind persönliche Gespräche und Begegnungen am liebsten? Komm einfach vorbei, wir freuen uns sehr über deinen Besuch! Du musst nichts mitbringen - offene Ohren und ein aufgeschlossenes Herz sind aber immer gut! Klicke einfach auf das Ortssymbol um uns auf Google Maps zu finden, oder gib die folgende Adresse in dein Navi ein.</p>
+                        <a class="btn btn-primary" href="https://goo.gl/maps/orZxkBa9smkP4suB9" target="_blank" rel="noopener">
+                            <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#i-location-dot"></use></svg>
+                            Brandenburger Str. 12, Delmenhorst 27755
+                        </a>
+                    </article>
                 </div>
             </div>
-        </div>
-        <div class="wrap-collabsible card">
-            <input id="email" class="toggle" type="checkbox">
-            <label for="email" class="lbl-toggle">E-MAIL SCHREIBEN</label>
-            <div class="collapsible-content">
-                <div class="content-inner">
-                    <!-- <i class="fas fa-server fa-3x"></i> -->
-                    <p>Du möchtest uns gerne schriftlich etwas mitteilen oder fragen? Gerne kannst du uns eine Mail an die untenstehende Email-Adresse schicken. Wir melden uns dann schnellstmöglich bei dir zurück, um auf dein Anliegen zu antworten. Drücke zum Verfassen einer Email entweder direkt auf das Email-Symbol oder kopiere diese Email-Adresse und füge sie in deine Empfängerzeile ein. <br><br><a href="mailto:fbg.delmenhorst@gmail.com?Subject=Some%20subject"
-                        class="fas fa-envelope fa-2x social"></a>fbg.delmenhorst@gmail.com</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <p class="footer-title">Freie Bibelgemeinde Delmenhorst</p>
+                    <p>Copyright &copy; <span data-year>2026</span></p>
                 </div>
-            </div>
-        </div>
-        <div class="wrap-collabsible card">
-            <input id="whatsapp" class="toggle" type="checkbox">
-            <label for="whatsapp" class="lbl-toggle">WHATSAPP NACHRICHT SCHREIBEN</label>
-            <div class="collapsible-content">
-                <div class="content-inner">
-                    <!-- <i class="fas fa-server fa-3x"></i> -->
-                    <p>Unter dieser Nummer kannst du unseren Gemeindeältesten auf Whatsapp erreichen. Schreibe ihm eine freundliche Nachricht, er wird sich sobald wie möglich bei dir zurückmelden. <br><br><a target="_blank"
-                        href="https://wa.me/4915561548384?text=Hallo%20liebe%20Freie%20Bibelgemeinde%20Delmenhorst!%20Ich%20war%20auf%20eurer%20Webseite%20und%20hätte%20da%20eine%20nette%20Frage...%20"
-                        class="fab fa-whatsapp fa-2x social"></a>+49 15561 548384</p>
-                </div>
-            </div>
-        </div>
-        <div class="wrap-collabsible card">
-            <input id="besuchen" class="toggle" type="checkbox">
-            <label for="besuchen" class="lbl-toggle">BESUCHEN</label>
-            <div class="collapsible-content">
-                <div class="content-inner">
-                    <!-- <i class="fas fa-server fa-3x"></i> -->
-                    <p>Dir sind persönliche Gespräche und Begegnungen am liebsten? Komm einfach vorbei, wir freuen uns sehr über deinen Besuch! Du musst nichts mitbringen - offene Ohren und ein aufgeschlossenes Herz sind aber immer gut! Klicke einfach auf das Ortssymbol um uns auf Google Maps zu finden, oder gib die folgende Adresse in dein Navi ein. <br><br><a target="_blank" href="https://goo.gl/maps/orZxkBa9smkP4suB9"
-                        class="fas fa-map-marker-alt fa-2x social"></a>Brandenburger Str. 12, Delmenhorst 27755</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-    <!-- Footer -->
-    <footer class="footer bg-dark py-5">
-        <div class="container grid grid-2">
-            <div>
-                <h1>Freie Bibelgemeinde Delmenhorst</h1>
-                <p>Copyright &copy; 2025</p>
-            </div>
-            <nav>
-                <ul>
-                    <li><a target="_blank" href="https://goo.gl/maps/orZxkBa9smkP4suB9"
-                            class="fas fa-map-marker-alt fa-2x social"></a>Brandenburger Str. 12, Delmenhorst 27755</li>
-
-                    <li><a target="_blank"
-                            href="https://wa.me/4915561548384?text=Hallo%20liebe%20Freie%20Bibelgemeinde%20Delmenhorst!%20Ich%20war%20auf%20eurer%20Webseite%20und%20hätte%20da%20eine%20nette%20Frage...%20"
-                            class="fab fa-whatsapp fa-2x social"></a>+49 15561 548384</li>
-
-                    <li><a href="tel:+4915561548384" class="fa-solid fa-phone fa-2x social"></a>+49 15561 548384</li>
-
-                    <li><a href="mailto:fbg.delmenhorst@gmail.com?Subject=Some%20subject"
-                            class="fas fa-envelope fa-2x social"></a>fbg.delmenhorst@gmail.com</li>
+                <ul class="footer-contact" aria-label="Kontakt">
+                    <li><a href="https://goo.gl/maps/orZxkBa9smkP4suB9" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#i-location-dot"></use></svg>Brandenburger Str. 12, Delmenhorst 27755</a></li>
+                    <li><a href="https://wa.me/4915561548384?text=Hallo%20liebe%20Freie%20Bibelgemeinde%20Delmenhorst!%20Ich%20war%20auf%20eurer%20Webseite%20und%20h%C3%A4tte%20da%20eine%20nette%20Frage...%20" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#i-whatsapp"></use></svg><span class="visually-hidden">WhatsApp: </span>+49 15561 548384</a></li>
+                    <li><a href="tel:+4915561548384"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#i-phone"></use></svg><span class="visually-hidden">Telefon: </span>+49 15561 548384</a></li>
+                    <li><a href="#email" data-mail-user="fbg.delmenhorst" data-mail-domain="gmail.com"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#i-envelope"></use></svg><span class="visually-hidden">E-Mail: </span><span data-mail-text>fbg.delmenhorst [at] gmail.com</span></a></li>
                 </ul>
-            </nav>
+            </div>
+            <div class="footer-bottom">
+                <ul>
+                    <li><a href="impressum.html">Impressum</a></li>
+                    <li><a href="datenschutz.html">Datenschutz</a></li>
+                </ul>
+            </div>
+        </div>
     </footer>
 </body>
-
 </html>
