@@ -12,3 +12,4 @@
 /html/*                       /                                    301
 # Werkzeuge nicht öffentlich ausliefern
 /tools/*                      /404.html                            404!
+/README.md                    /404.html                            404!
